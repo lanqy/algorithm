@@ -90,6 +90,8 @@ function bubbleSort(items){
 
 from: http://www.nczonline.net/blog/2009/05/26/computer-science-in-javascript-bubble-sort/
 
+http://codingmiles.com/sorting-algorithms-bubble-sort-using-javascript/
+
 #4、insertion sort
 ```javascript
 function insertionSort(unsortedList) {
@@ -114,3 +116,4 @@ insertionSort(ul);
 console.log(ul);
 ```
 form: http://codingmiles.com/sorting-algorithms-insertion-sort-using-javascript/
+http://bateru.com/news/2011/03/code-of-the-day-javascript-insertion-sort/
