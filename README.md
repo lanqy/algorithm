@@ -1,7 +1,7 @@
 # Javascript algorithm
-## Collect all kinds of algorithms implemented in JavaScript
 
 #1、Quicksort
+(1)、
 ```javascript
 function quicksort(arr) {
     //if array is empty
