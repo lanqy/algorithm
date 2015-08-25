@@ -22,7 +22,7 @@ function quicksort(arr) {
     return quicksort(left).concat(pivot, quicksort(right));
 }
 ```
-from http://antjanus.com/blog/web-development-tutorials/understanding-quicksort-js-native-implementation/
+from: http://antjanus.com/blog/web-development-tutorials/understanding-quicksort-js-native-implementation/
 http://h3manth.com/javascript-sorting/
 
 #2、 Javascript binary search
@@ -61,7 +61,7 @@ function binaryIndexOf(searchElement) {
     return -1;
 }
 ```
-from http://oli.me.uk/2013/06/08/searching-javascript-arrays-with-a-binary-search/
+from: http://oli.me.uk/2013/06/08/searching-javascript-arrays-with-a-binary-search/
 
 #3、Javascript bubblesort
 ```javascript
@@ -88,4 +88,29 @@ function bubbleSort(items){
 }
 ```
 
-from http://www.nczonline.net/blog/2009/05/26/computer-science-in-javascript-bubble-sort/
+from: http://www.nczonline.net/blog/2009/05/26/computer-science-in-javascript-bubble-sort/
+
+#4、insertion sort
+```javascript
+function insertionSort(unsortedList) {
+    var len = unsortedList.length;
+
+    for (var i = 0; i < len; i++) {
+        var tmp = unsortedList[i]; //Copy of the current element.
+        /*Check through the sorted part and compare with the 
+        number in tmp. If large, shift the number*/
+        for (var j = i - 1; j >= 0 && (unsortedList[j] > tmp); j--) {
+            //Shift the number
+            unsortedList[j + 1] = unsortedList[j];
+        }
+        //Insert the copied number at the correct position
+        //in sorted part.
+        unsortedList[j + 1] = tmp;
+    }
+}
+
+var ul = [5, 3, 1, 2, 4];
+insertionSort(ul);
+console.log(ul);
+```
+form: http://codingmiles.com/sorting-algorithms-insertion-sort-using-javascript/
