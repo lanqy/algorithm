@@ -1,5 +1,5 @@
-# algorithm
-Collect all kinds of algorithms implemented in JavaScript
+# Javascript algorithm
+## Collect all kinds of algorithms implemented in JavaScript
 
 #1、Quicksort
 ```javascript
