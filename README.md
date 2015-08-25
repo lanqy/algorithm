@@ -63,3 +63,29 @@ function binaryIndexOf(searchElement) {
 ```
 from http://oli.me.uk/2013/06/08/searching-javascript-arrays-with-a-binary-search/
 
+#3、Javascript bubblesort
+```javascript
+function swap(items, firstIndex, secondIndex){
+    var temp = items[firstIndex];
+    items[firstIndex] = items[secondIndex];
+    items[secondIndex] = temp;
+}
+
+function bubbleSort(items){
+
+    var len = items.length,
+        i, j, stop;
+
+    for (i=0; i < len; i++){
+        for (j=0, stop=len-i; j < stop; j++){
+            if (items[j] > items[j+1]){
+                swap(items, j, j+1);
+            }
+        }
+    }
+
+    return items;
+}
+```
+
+from http://www.nczonline.net/blog/2009/05/26/computer-science-in-javascript-bubble-sort/
