@@ -23,6 +23,7 @@ function quicksort(arr) {
 }
 ```
 from http://antjanus.com/blog/web-development-tutorials/understanding-quicksort-js-native-implementation/
+http://h3manth.com/javascript-sorting/
 
 #2、 Javascript binary search
 ```javascript
