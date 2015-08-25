@@ -22,3 +22,4 @@ function quicksort(arr) {
     return quicksort(left).concat(pivot, quicksort(right));
 }
 ```
+from http://antjanus.com/blog/web-development-tutorials/understanding-quicksort-js-native-implementation/
