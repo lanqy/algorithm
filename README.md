@@ -2,7 +2,7 @@
 Collect all kinds of algorithms implemented in JavaScript
 
 #1、Quicksort
-
+```javascript
 function quicksort(arr) {
     //if array is empty
     if (arr.length === 0) {
@@ -21,4 +21,4 @@ function quicksort(arr) {
     }
     return quicksort(left).concat(pivot, quicksort(right));
 }
-
+```
