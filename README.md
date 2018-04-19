@@ -24,6 +24,8 @@ function quicksort(arr) {
 ```
 from: http://antjanus.com/blog/web-development-tutorials/understanding-quicksort-js-native-implementation/
 
+
+
 #2、 Javascript binary search
 ```javascript
 /**
@@ -147,3 +149,31 @@ from: http://codingmiles.com/sorting-algorithms-selection-sort-using-javascript/
 Resources:
 
 http://h3manth.com/javascript-sorting/
+
+
+#6、Computer science in JavaScript: Binary search
+
+```javascript
+function binarySearch(items, value){
+    var startIndex = 0,
+        stopIndex = items.length - 1,
+        middle = Math.floor((stopIndex + startIndex) / 2);
+    while(items[middle] != value && startIndex < stopIndex) {
+
+        // 调整搜索区域
+        if (value < items[middle]) {
+            stopIndex = middle - 1;
+        } else if (value > items[middle]){
+            startIndex = middle + 1;
+        }
+
+        // 重新计算中间值
+        middle = Math.floor((stopIndex + startIndex) / 2);
+    }
+
+    // 确保它是正确的值
+    return (items[middle] != value) ? -1 : middle;
+}
+```
+
+from:  https://www.nczonline.net/blog/2009/09/01/computer-science-in-javascript-binary-search/
